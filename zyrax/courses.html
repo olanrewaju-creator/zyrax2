@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Courses - ZYRAX</title>
+  <link rel="stylesheet" href="zyrax.css">
+  <script>
+    function selectCourse(coursePage, courseName) {
+      let confirmEnroll = confirm(`Do you want to enroll in ${courseName}?`);
+      if (confirmEnroll) {
+        window.location.href = coursePage;
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <img src="../ChatGPT Image Sep 26, 2025, 05_39_05 PM.png" alt="ZYRAX Logo" class="site-logo">
+      <nav class="nav-links">
+        <a href="zyrax.htm">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="contact.html">Contact</a>
+        <a href="courses.html" class="active">Courses</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Course Section -->
+  <section class="courses-section">
+    <div class="container">
+      <h1>Choose Your Courses</h1>
+      <p class="courses-intro">
+        Welcome! Select the courses you are interested in after signing up with ZYRAX.  
+        Start your journey to becoming a tech expert.
+      </p>
+
+      <div class="courses-grid">
+        <div class="course-card">
+          <h2>Web Development</h2>
+          <p>Learn HTML, CSS, JavaScript, and frameworks to build responsive websites.</p>
+          <button class="btn-select" onclick="selectCourse('webdev.html', 'Web Development')">Select Course</button>
+        </div>
+
+        <div class="course-card">
+          <h2>Mobile App Development</h2>
+          <p>Create powerful mobile apps for Android and iOS using Flutter & React Native.</p>
+          <button class="btn-select" onclick="selectCourse('mobile.html', 'Mobile App Development')">Select Course</button>
+        </div>
+
+        <div class="course-card">
+          <h2>Cybersecurity</h2>
+          <p>Understand ethical hacking, data protection, and digital defense systems.</p>
+          <button class="btn-select" onclick="selectCourse('cybersecurity.html', 'Cybersecurity')">Select Course</button>
+        </div>
+
+        <div class="course-card">
+          <h2>Artificial Intelligence</h2>
+          <p>Dive into AI, machine learning, and deep learning for real-world applications.</p>
+          <button class="btn-select" onclick="selectCourse('ai.html', 'Artificial Intelligence')">Select Course</button>
+        </div>
+
+        <div class="course-card">
+          <h2>Cloud Computing</h2>
+          <p>Master AWS, Azure, and Google Cloud platforms for scalable solutions.</p>
+          <button class="btn-select" onclick="selectCourse('cloud.html', 'Cloud Computing')">Select Course</button>
+        </div>
+
+        <div class="course-card">
+          <h2>Data Science</h2>
+          <p>Analyze data, build models, and discover insights with Python and R.</p>
+          <button class="btn-select" onclick="selectCourse('datascience.html', 'Data Science')">Select Course</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
